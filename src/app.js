@@ -9,7 +9,7 @@ const hbs = require('hbs');
 
 const app = express()
 
-const port = 3000 
+const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname,'../public');
 const partialsPath = path.join(__dirname,'../templates/partials');
